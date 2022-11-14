@@ -10,7 +10,7 @@
 
 <body>
    <div class="wrapper">
-      <header class="header">
+      <header id="header" class="header lock-padding">
     <div class="header__container">
         <div class="header__body">
             <a href="#" class="header__logo">
@@ -27,8 +27,8 @@
                 </nav>
             </div>
             <div class="header__button">
-                    <a href="" class="button__sign">Sign in</a>
-                    <a href="" class="button__start button__green">Start Trial</a>
+                    <a href="#popup" class="button__sign popup-link">Sign in</a>
+                    <a href="#popup2" class="button__start button__green popup-link">Start Trial</a>
             </div>
             <div class="header__burger">
                 <span></span>
@@ -45,7 +45,7 @@
                            Manage well.</div>
                         <div class="block-text__text">Everyone experiences stress in different ways.
                            Let Alivio guide you, in a personalized journal experience, to overcome your stress.</div>
-                        <a href="" class="block-text__button button">Find Your Way</a>
+                        <a href="#popup2" class="block-text__button button popup-link">Find Your Way</a>
                      </div>
                   </div>
                </div>
@@ -111,7 +111,7 @@
                   <div class="getStart__content">
                      <div class="getStart__title">Let's hear about Kayla's success story</div>
                      <div class="getStart__text">See how well Alivio works in a real customer’s life.</div>
-                     <a href="" class="getStart__button button">Let’s get started</a>
+                     <a href="#popup2" class="getStart__button button popup-link">Let’s get started</a>
                   </div>
                   <div class="getStart__video">
                      <iframe width="560" height="315" src="https://www.youtube.com/embed/sZBmEuOY5MQ" title="YouTube video player"
@@ -132,7 +132,7 @@
                         We make your diary</div>
                         <div class="content__text">Everyone experiences it, and in different ways.
                         Let Alivio guide you, in a personalized journal experience, to overcome your stress.</div>
-                        <div class="content__button button">Find Your Way</div>
+                        <a href="#popup2" class="content__button button popup-link">Find Your Way</a>
                      </div>
                   </div>
 
@@ -153,6 +153,80 @@
     </div>
 </footer>
    </div>
+   <div id="popup" class="popup">
+      <div class="popup__body">
+         <div class="popup__content">
+            <a href="#header" class="popup__close close-popup">X</a>
+            <div class="popup__title">Sign in</div>
+            <form class="form__sign" action="#" method="post" enctype="multipart/form-data">
+               <div class="form__name">
+                  <div class="form__name2">Your email or username</div>
+                  <input tabindex="1" name="username" type="text" />
+               </div>
+               <div class="form__pass">
+                  <div class="form__pass2">Your password</div>
+                  <input tabindex="2" name="userpass" type="password" />
+               </div>
+               <div>
+                  <button tabindex="3" type="submit">Войти</button>
+                  <button tabindex="4" type="reset">Очистить</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <div id="popup2" class="popup">
+      <div class="popup__body">
+         <div class="popup__content">
+            <a href="#header" class="popup__close close-popup">X</a>
+            <form id="form" class="form__body" action="#">
+               <h1 class="form__title">Start trial</h1>
+               <div class="form__item">
+                  <label for="formName" class="form__label">Имя*:</label>
+                  <input id="formName" type="text" name="name" class="form__input">
+               </div>
+               <div class="form__item">
+                  <label for="formEmail" class="form__label">E-mail*:</label>
+                  <input id="formEmail" type="text" name="email" class="form__input">
+               </div>
+               <div class="form__item">
+                  <div class="form__label">Мужчиина или женщина?</div>
+                  <div class="options">
+                     <div class="options__item">
+                        <input id="genderM" checked type="radio" value="man" name="gender" class="options__input">
+                        <label for="genderM" class="options__label"><span>Мужчина</span></label>
+                        </div>
+                        <div class="options__item">
+                        <input id="genderW" type="radio" value="woman" name="gender" class="options__input">
+                        <label for="genderW" class="options__label"><span>Женщина</span></label>
+                     </div>
+                  </div>
+               </div>
+               <div class="form__item">
+                  <label for="formMessage" class="form__label">Сообщение:</label>
+                  <textarea name="message" id="formMessage" class="form__input"></textarea>
+               </div>
+               <div class="form__item">
+                  <div class="form__label">Возраст:</div>
+                  <select name="age" class="selected" id="">
+                     <option value="до 18" selected="selected">До 18</option>
+                     <option value="от 19 до 25">от 19 до 25</option>
+                     <option value="от 26 до 45">от 26 до 45</option>
+                     <option value="от 46">от 46</option>
+                  </select>
+               </div>
+               <div class="form__item">
+                  <div class="checkbox">
+                     <input checked id="formAgreement" type="checkbox" name="agreement" id="checkbox__input" class="checkbox__input">
+                     <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="">условием*</a></span></label>
+                  </div>
+               </div>
+               <button type="submit" class="form__button">Отправить</button>
+            </form>
+         </div>
+      </div>
+   </div>
+   <script src="js/script.min.js"></script>
    <script src="js/app.min.js"></script>
 </body>
 
