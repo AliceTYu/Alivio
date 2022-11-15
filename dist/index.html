@@ -162,10 +162,10 @@
                <img src="img/Logo.png" alt="logo">
             </div>
             <h1 class="popup__title">Sign in</h1>
-            <form class="form__sign" action="#">
+            <!-- <form class="form" action="#">
                <div class="form__item">
-                  <label for="formEmail" class="form__label">E-mail:</label>
-                  <input id="formEmail" type="text" name="email" class="form__input">
+                  <label for="formEmail" class="form__label">E-mail*:</label>
+                  <input id="formEmail1" type="text" name="email1" class="form__input _req _email">
                </div>
                <div class="form__item">
                   <label for="formPass" class="form__label">Password:</label>
@@ -173,12 +173,12 @@
                </div>
                <div class="form__item">
                   <div class="checkbox">
-                     <input checked id="formAgreement" type="checkbox" name="agreement" id="checkbox__input" class="checkbox__input">
+                     <input checked id="formAgreement1" type="checkbox" name="agreement1" class="checkbox__input">
                      <label for="formAgreement" class="checkbox__label rem">Remember me</label>
                   </div>
                </div>
                <button type="submit" class="form__button">Отправить</button>
-            </form>
+            </form> -->
          </div>
       </div>
    </div>
@@ -188,14 +188,17 @@
          <div class="popup__content">
             <a href="#header" class="popup__close close-popup">X</a>
             <form id="form" class="form__body" action="#">
+               <div class="poput__logo">
+                  <img src="img/Logo.png" alt="logo">
+               </div>
                <h1 class="form__title">Start trial</h1>
                <div class="form__item">
                   <label for="formName" class="form__label">Имя*:</label>
-                  <input id="formName" type="text" name="name" class="form__input">
+                  <input id="formName" type="text" name="name" class="form__input _req">
                </div>
                <div class="form__item">
                   <label for="formEmail" class="form__label">E-mail*:</label>
-                  <input id="formEmail" type="text" name="email" class="form__input">
+                  <input id="formEmail" type="text" name="email" class="form__input _req _email">
                </div>
                <div class="form__item">
                   <div class="form__label">Мужчиина или женщина?</div>
@@ -225,7 +228,7 @@
                </div>
                <div class="form__item">
                   <div class="checkbox">
-                     <input checked id="formAgreement" type="checkbox" name="agreement" id="checkbox__input" class="checkbox__input">
+                     <input checked id="formAgreement" type="checkbox" name="agreement"  class="checkbox__input _req">
                      <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="">условием*</a></span></label>
                   </div>
                </div>
@@ -234,7 +237,6 @@
          </div>
       </div>
    </div>
-   <script src="js/script.min.js"></script>
    <script src="js/app.min.js"></script>
 </body>
 
