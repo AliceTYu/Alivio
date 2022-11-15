@@ -153,28 +153,36 @@
     </div>
 </footer>
    </div>
+
    <div id="popup" class="popup">
       <div class="popup__body">
          <div class="popup__content">
             <a href="#header" class="popup__close close-popup">X</a>
-            <div class="popup__title">Sign in</div>
-            <form class="form__sign" action="#" method="post" enctype="multipart/form-data">
-               <div class="form__name">
-                  <div class="form__name2">Your email or username</div>
-                  <input tabindex="1" name="username" type="text" />
+            <div class="poput__logo">
+               <img src="img/Logo.png" alt="logo">
+            </div>
+            <h1 class="popup__title">Sign in</h1>
+            <form class="form__sign" action="#">
+               <div class="form__item">
+                  <label for="formEmail" class="form__label">E-mail:</label>
+                  <input id="formEmail" type="text" name="email" class="form__input">
                </div>
-               <div class="form__pass">
-                  <div class="form__pass2">Your password</div>
-                  <input tabindex="2" name="userpass" type="password" />
+               <div class="form__item">
+                  <label for="formPass" class="form__label">Password:</label>
+                  <input id="formPass" type="password" name="password" class="form__input">
                </div>
-               <div>
-                  <button tabindex="3" type="submit">Войти</button>
-                  <button tabindex="4" type="reset">Очистить</button>
+               <div class="form__item">
+                  <div class="checkbox">
+                     <input checked id="formAgreement" type="checkbox" name="agreement" id="checkbox__input" class="checkbox__input">
+                     <label for="formAgreement" class="checkbox__label rem">Remember me</label>
+                  </div>
                </div>
+               <button type="submit" class="form__button">Отправить</button>
             </form>
          </div>
       </div>
    </div>
+
    <div id="popup2" class="popup">
       <div class="popup__body">
          <div class="popup__content">
